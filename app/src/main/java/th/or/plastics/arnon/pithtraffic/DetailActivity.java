@@ -1,7 +1,9 @@
 package th.or.plastics.arnon.pithtraffic;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,6 +32,14 @@ public class DetailActivity extends AppCompatActivity {
         showView();
 
     } // Main Method
+
+    public void clickBack(View view) {
+      finish();
+    }
+
+    public void clickExercise(View view) {
+      startActivity(new Intent(DetailActivity.this,ExerciseActivity.class));
+    }
 
     private void showView() {
 
